@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 ---test
 title: "Starting with Github"
 author: "Jose Angel Sanchez Gomez"
@@ -142,7 +147,7 @@ An important part of using GitHub is to ensure that your commits are well descri
 2. Enter canvas, and find the assignment labeled DA3. 
 3. Upload this screenshot for grading. 
 
-
+![Some_Name](DamiaRepository.png)
 ## Conclusion.
 
 
