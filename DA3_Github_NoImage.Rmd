@@ -1,0 +1,154 @@
+---test
+title: "Starting with Github"
+author: "Jose Angel Sanchez Gomez"
+date: "2025-10-10"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**Due October 10th.**
+
+GitHub is a free online software that allows you to store, update, share and collaborate on programming projects. This tool is specially useful for projects where there is more than one person working on the project simultaneously. Among the advantages GitHub offers, we have
+
+1. It is fully free. 
+2. It works as a cloud for every person involved in the project, so everyone has access to all files.
+3. Internet is only needed for uploading/downloading updates, and in the meantime users can modify the code offline.
+2. GitHub helps keep track of changes, so it is possible to revert mistakes if necessary.
+3. When several people are working on the same project and working on the same files, GitHub ensures that any conflicts are solved, which helps with better version control across teams.
+4. It is a widely used and popular tool for version control in projects in industry and academia, specially coding-related tasks.
+
+
+In this document, we will walk you through creating your first GitHub repository, and some basic interactions with it. 
+
+
+## Step 1: Creating a Github Account
+
+Before working, it is essential to create a GitHub user. For this, go to [https://github.com/](https://github.com/), and click "Sign up for GitHub". Complete the steps to create an account. Before you finish, we provide the following observations.
+
+Adv1. If you already have a GitHub account, you do not have to create a new one.
+Adv2. We recommend you use a personal email. If UCR email is used, you may lose access to your repositories upon graduation.
+Adv3. Select a username with a professional tone, since it will be used for academic/professional endeavors.
+
+Once you complete the creation of your account... Sign in and wow! You have a GitHub account!
+
+## Step 2: Creating a Repository
+
+To start your GitHub journey, the first step is to create your first repository. A repository is basically a cloud folder, which can have copies in one or multiple computers. We will go through how to modify the cloud soon. For now, 
+
+1. Sign-in to your GitHub account.
+2. On your main dashboard, find the button "new." A display similar to that of Figure 1 will appear.
+3. Give the repository the name "STAT107_DA3_Lastname_Firstname_MyFirstRepository".
+4. Set your repository to be private. 
+5. Write in the Description "This is the first GitHub repository created for the course STAT 107 taught by Prof. Jose Sanchez Gomez and Zhuo Huang."
+6. Select adding a README file.
+7. Select no .gitignore. 
+8. Select no license.
+9. Click __"create repository."__ You are done!
+
+
+
+When you enter the repository, you see a directory that currently only contains a \texttt{"README.md"} file. 
+
+
+## Step 3: Your First Commit
+
+The way to change the content of your repository is through __commits__. Lets start by creating your first commit.
+
+1. Click editing to the "README.md" file. 
+2. Write down a sentence such as "This is my first commit in this repository."
+3. Click "commit changes..." You should see a display like the one visualized in Figure 2. 
+4. Change commit message to "Update README.md"
+5. Do not provide extended description.
+6. Commit directly to main branch.
+7. Click on "commit changes". 
+
+
+
+
+Voila! You have commited your first change. As you can see, Your README.md now has the added sentence, and your repository indicates two commits. 
+
+8. You can check what changes were made in the commit you made by clicking on "2 commits" and then clicking the commit "Update README.md". You should see a visualization showing the files before and after the commit, as in Figure 3. 
+
+
+## Step 4: Cloning your Repository Locally
+
+While possible, it is impractical to do all your coding and file-creation work online on the browser. You will need to test your code, verify outputs, program, etc. Thus, it is vital to be able to create and edit files on your computer, to then upload to the GitHub repository through local-to-online commits. For this, we need to "clone" your repository to your local computer.
+
+To achieve this, we must first install the GitHub Desktop application. Here are the steps.
+
+1. Go to [https://desktop.github.com/download/](https://desktop.github.com/download/), and download the GitHub Desktop application.
+2. Install the application.
+3. Once GitHub Desktop is installed, sign-in to your user.
+4. Once you finish signing-in, go to "File - Clone Repository." You will see a window pop-up with options for cloning, as in Figure 4.
+5. Select the repository you want to clone, and select the directory where you want to clone it. Clone the repository into the folder you have assigned to your STAT 107 course.
+
+
+
+
+6. Once it is cloned, verify that there is a new folder in the directory you chose, and it contains only a README.md file consistent with your repository. 
+
+
+## Step 5: Commiting a Local Change to The Repository.
+
+The great benefit of having a local copy of your repository, is that you now can create, edit and run files to your repository offline, independent of your browser. Once you complete changes, it is important to incorporate the changes to the online repository. Follow these steps to create your first local-to-online commit.
+
+1. Copy the RMD file of this DA3 assignment to your GitHub cloned folder. 
+2. Open the README.md file, and write into a new paragraph: "This text was writen locally, and will be commited through GitHub Desktop."
+3. Open GitHub Desktop once you finish these changes. You should see the column tracking changes show two changes. See Figure 5 for an example. 
+4. You can check how files were changed within GitHub desktop app. This will compare your local files with the online copy, and highlight the differences. 
+5. Give a name to the commit: "My first local commit". For now, you don't have to provide a detailed description.
+6. Click "commit 2 files to main." This puts the files on queue to be incorporated to the online repository.
+7. To conclude, click "Push origin" button, which finally adds your changes to your online repository.
+
+
+
+Now, feel free to check on your browser to confirm that your repository has now 3 commits, contains 2 files and you can check within the new commit what changes were incorporated from your local GitHub directory.
+
+
+## Step 6: Adding Collaborators.
+
+An important part of using GitHub is to ensure that your commits are well described, since it is not always evident what commits are aimed to resolve. Good documentation can save many headaches. Steps can be seen in Figure 6.
+
+1. Go to GitHub repository on your browser, and click settings. 
+2. Click on collaborators.
+3. Click on "Add people".
+4. Write down the usernames of your 2 project-mates on your github repository. 
+
+
+
+5. Of your team of 3, assign to each member a number 1, 2 or 3.
+
+6. Person 1 clones repository of person 2 into their computer. Person 2 clones person's 3 repostory. Person 3 will clone person's 1 repository to their computer.
+
+7. Now, add to the cloned repository that you are not the owner of: (A) the PNG files necessary to knit the RMD file; (B) knit the file into PDF, which should create a PDF file. 
+
+8. Commit+push these changes to the repository of your teammate, with the title "First collaborator commit." and description "Commit completed by FirstName Lastname. Added files necessary to knit RMD file."
+
+9. Verify in the browser that your collaborator's commit was successful.
+
+ 
+
+
+
+## Step 7: Report results for grading.
+
+
+1. Go to your list of commits for the repository you created. Take a screenshot of your browser, including all of the GitHub display. It should show three commits, where the third is made by a different user than you, and named as expected.
+2. Enter canvas, and find the assignment labeled DA3. 
+3. Upload this screenshot for grading. 
+
+
+## Conclusion.
+
+
+Great! This is a good first introduction to GitHub, repositories, cloning, committing and collaborating. We will continue to work with GitHub as we move forward with the project! 
+
+Later, we will further discuss more topics of github, such as branches and merging.
+
+
+
