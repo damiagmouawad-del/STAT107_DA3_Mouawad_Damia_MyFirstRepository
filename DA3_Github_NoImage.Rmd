@@ -148,6 +148,7 @@ An important part of using GitHub is to ensure that your commits are well descri
 3. Upload this screenshot for grading. 
 
 ![Some_Name](DamiaRepository.png)
+![Some_Name](screenshot.png)
 ## Conclusion.
 
 
